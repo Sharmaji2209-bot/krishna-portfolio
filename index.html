@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO Metadata -->
+  <title>Krishna Sharma | B.Tech CSE (AI/ML) Student | Python Developer</title>
+  <meta name="title" content="Krishna Sharma | B.Tech CSE (AI/ML) Student | Python Developer">
+  <meta name="description" content="Krishna Sharma is a B.Tech CSE student from Indore specializing in AI/ML, Python, computer vision, cybersecurity, and practical technology projects.">
+  <meta name="keywords" content="Krishna Sharma, AI ML Developer, Python Developer, Computer Vision, Indore, IES IPS Academy, MiDaS Depth, YOLOv8, Cybersecurity, Robotics">
+  <meta name="author" content="Krishna Sharma">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://krishna-sharma.dev/">
+  <meta property="og:title" content="Krishna Sharma | B.Tech CSE (AI/ML) Student | Python Developer">
+  <meta property="og:description" content="Building practical solutions with AI, computer vision, Python, and emerging technologies. Explore projects, engineering architecture, and internships.">
+  <meta property="og:image" content="assets/images/depth_navigation_signature.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Krishna Sharma | B.Tech CSE (AI/ML) Student | Python Developer">
+  <meta property="twitter:description" content="Building practical solutions with AI, computer vision, Python, and emerging technologies. Explore projects, engineering architecture, and internships.">
+  <meta property="twitter:image" content="assets/images/depth_navigation_signature.jpg">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23070a13'/><text x='50' y='65' font-family='monospace' font-weight='bold' font-size='48' fill='%2306b6d4' text-anchor='middle'>KS</text></svg>">
+
+  <!-- Modern Typography (Inter & JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              obsidian: '#070a13',
+              slate: '#0c1220',
+              cyan: '#06b6d4',
+              violet: '#8b5cf6',
+              emerald: '#10b981',
+              amber: '#f59e0b',
+              crimson: '#ef4444'
+            }
+          },
+          boxShadow: {
+            'glow-cyan': '0 0 25px -4px rgba(6, 182, 212, 0.4)',
+            'glow-violet': '0 0 25px -4px rgba(139, 92, 246, 0.35)',
+            'glass': '0 10px 35px -5px rgba(0, 0, 0, 0.55)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS Design Tokens & Glassmorphism -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-[#070a13] text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+
+  <!-- Background Interactive Neural Network Canvas -->
+  <canvas id="hero-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+
+  <!-- ========================================================================
+       Sticky Glassmorphism Navigation Bar
+       ======================================================================== -->
+  <header class="sticky top-0 z-50 w-full backdrop-blur-xl bg-[#070a13]/80 border-b border-white/10 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Monogram Logo -->
+      <a href="#home" class="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-cyan-400 rounded-lg p-1">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-500/20 to-violet-500/20 border border-cyan-500/40 flex items-center justify-center font-mono font-bold text-cyan-400 text-base group-hover:border-cyan-400 group-hover:shadow-[0_0_15px_rgba(6,182,212,0.4)] transition-all">
+          KS
+        </div>
+        <div>
+          <span class="font-bold text-sm tracking-tight text-white group-hover:text-cyan-300 group-hover:drop-shadow-[0_0_10px_rgba(6,182,212,0.8)] transition-all">KRISHNA SHARMA</span>
+          <span class="block text-[10px] font-mono text-cyan-400/80">B.Tech CSE (AI/ML)</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav class="hidden lg:flex items-center gap-7 text-xs font-mono tracking-wider">
+        <a href="#home" class="nav-link text-slate-300 hover:text-cyan-400 py-1">HOME</a>
+        <a href="#about" class="nav-link text-slate-300 hover:text-cyan-400 py-1">ABOUT</a>
+        <a href="#skills" class="nav-link text-slate-300 hover:text-cyan-400 py-1">SKILLS</a>
+        <a href="#experience" class="nav-link text-slate-300 hover:text-cyan-400 py-1">EXPERIENCE</a>
+        <a href="#projects" class="nav-link text-slate-300 hover:text-cyan-400 py-1">PROJECTS</a>
+        <a href="#certifications" class="nav-link text-slate-300 hover:text-cyan-400 py-1">CREDENTIALS</a>
+        <a href="#achievements" class="nav-link text-slate-300 hover:text-cyan-400 py-1">ACHIEVEMENTS</a>
+        <a href="#contact" class="nav-link text-slate-300 hover:text-cyan-400 py-1">CONTACT</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button class="download-resume-btn px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 transition-all flex items-center gap-1.5 shadow-[0_0_15px_rgba(6,182,212,0.15)]">
+          <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Resume
+        </button>
+        <a href="#contact" class="px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 hover:brightness-110 transition-all flex items-center gap-1.5 shadow-[0_0_20px_rgba(6,182,212,0.3)]">
+          <i data-lucide="mail" class="w-3.5 h-3.5"></i> Get in Touch
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-toggle" aria-label="Toggle navigation menu" class="lg:hidden p-2 rounded-xl bg-slate-900 border border-white/10 text-slate-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-cyan-400">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu-drawer" class="hidden lg:hidden glass-panel border-b border-white/10 px-6 py-6 space-y-4 font-mono text-sm">
+      <a href="#home" class="block text-slate-300 hover:text-cyan-400 py-1">Home</a>
+      <a href="#about" class="block text-slate-300 hover:text-cyan-400 py-1">About Me</a>
+      <a href="#skills" class="block text-slate-300 hover:text-cyan-400 py-1">Technical Skills</a>
+      <a href="#experience" class="block text-slate-300 hover:text-cyan-400 py-1">Internships & Experience</a>
+      <a href="#projects" class="block text-slate-300 hover:text-cyan-400 py-1">Featured Projects</a>
+      <a href="#certifications" class="block text-slate-300 hover:text-cyan-400 py-1">Certifications & Programs</a>
+      <a href="#achievements" class="block text-slate-300 hover:text-cyan-400 py-1">Achievements & NSS</a>
+      <a href="#contact" class="block text-slate-300 hover:text-cyan-400 py-1">Contact Krishna</a>
+      <div class="pt-4 border-t border-white/10 flex flex-col gap-2">
+        <button class="download-resume-btn w-full py-2.5 rounded-xl text-center text-xs font-semibold bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
+          Download Resume (PDF)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Main Content Container
+       ======================================================================== -->
+  <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-28 lg:space-y-36 pt-12 pb-24">
+
+    <!-- ======================================================================
+         1. HERO SECTION
+         ====================================================================== -->
+    <section id="home" class="min-h-[85vh] flex flex-col justify-center pt-4 lg:pt-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center w-full">
+        
+        <!-- Left Column: Introduction, Headline & Actions -->
+        <div class="lg:col-span-7 flex flex-col justify-center items-start">
+          <!-- Location & Availability Badge with Backend Status -->
+          <div class="inline-flex flex-wrap items-center gap-2.5 px-3.5 py-1.5 rounded-full text-xs font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 mb-6 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Indore, Madhya Pradesh, India • Open for AI/ML Roles</span>
+            <span class="text-slate-500 hidden sm:inline">|</span>
+            <span class="inline-flex items-center gap-1.5 text-emerald-400 font-semibold text-[11px]">
+              <i data-lucide="server" class="w-3 h-3"></i> Backend API Online
+            </span>
+          </div>
+
+          <!-- Main Headline with Luminous Shimmer Light Effect on KRISHNA and SHARMA -->
+          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] mb-5">
+            <span class="text-gradient-shimmer">KRISHNA</span> <span class="text-gradient-shimmer">SHARMA</span>
+          </h1>
+
+          <!-- Professional Subheadline with Dynamic Animated Role Tag -->
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-medium text-slate-200 font-mono mb-4 flex flex-wrap items-center gap-2">
+            <span>B.Tech CSE (AI/ML)</span>
+            <span class="text-cyan-400">|</span>
+            <span class="inline-flex items-center gap-2 px-3 py-0.5 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-lg sm:text-xl lg:text-2xl font-bold">
+              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+              <span id="hero-rotating-role">Python Developer</span>
+            </span>
+          </h2>
+
+          <!-- Short Supporting Line -->
+          <p class="text-base sm:text-lg text-slate-300 max-w-xl leading-relaxed mb-8">
+            Building practical solutions with AI, computer vision, Python, and emerging technologies.
+          </p>
+
+          <!-- Primary Action Buttons with Magnetic Physics & Glowing Shadows -->
+          <div class="flex flex-wrap items-center gap-4 mb-8">
+            <a href="#projects" class="btn-magnetic px-7 py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 transition-all shadow-[0_0_25px_rgba(6,182,212,0.45)] flex items-center gap-2.5">
+              <i data-lucide="layers" class="w-4 h-4"></i> View My Projects
+            </a>
+
+            <button class="download-resume-btn btn-magnetic px-7 py-3.5 rounded-xl font-semibold text-sm bg-slate-900/90 text-white border border-white/15 hover:border-cyan-500/40 hover:text-cyan-300 transition-all flex items-center gap-2.5 backdrop-blur-md shadow-glass">
+              <i data-lucide="download" class="w-4 h-4 text-cyan-400"></i> Download Resume
+            </button>
+          </div>
+
+          <!-- Secondary Social & Connect Badges -->
+          <div class="flex flex-wrap items-center gap-4 pt-2 border-t border-white/10 w-full max-w-2xl text-xs font-mono text-slate-400">
+            <span class="text-slate-500">CONNECT:</span>
+            <a href="https://github.com/Sharmaji2209-bot" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-300 transition-colors flex items-center gap-1.5">
+              <i data-lucide="github" class="w-4 h-4 text-slate-400"></i> GitHub
+            </a>
+            <span class="text-slate-700">•</span>
+            <a href="https://www.linkedin.com/in/krishna-sharma-a08065326?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-300 transition-colors flex items-center gap-1.5">
+              <i data-lucide="linkedin" class="w-4 h-4 text-slate-400"></i> LinkedIn
+            </a>
+            <span class="text-slate-700">•</span>
+            <a href="mailto:Krishna.123mrkpro@gmail.com" class="hover:text-cyan-300 transition-colors flex items-center gap-1.5">
+              <i data-lucide="mail" class="w-4 h-4 text-slate-400"></i> Email Krishna
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Krishna Sharma Portrait Holographic Showcase Card -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-end">
+          <div class="relative w-full max-w-sm sm:max-w-md group">
+            <!-- Pulsing Ambient Cyber Aura -->
+            <div class="absolute -inset-2 bg-gradient-to-tr from-cyan-500 via-blue-600 to-violet-600 rounded-3xl blur-2xl opacity-40 group-hover:opacity-75 transition-opacity duration-700"></div>
+
+            <!-- Rotating Neon Bordered Container -->
+            <div class="relative cyber-rotating-border rounded-3xl overflow-hidden glass-panel p-2 shadow-2xl border border-white/15 backdrop-blur-2xl">
+              <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-slate-950">
+                <img src="assets/images/krishna_sharma.jpg" alt="Krishna Sharma - B.Tech CSE (AI/ML) Developer" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" style="object-position: center 20%;">
+
+                <!-- Subtle Cyber HUD Grid Vignette -->
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+
+                <!-- Top Left Role Badge -->
+                <div class="absolute top-3 left-3 px-3 py-1 rounded-full text-[11px] font-mono bg-slate-950/85 backdrop-blur-md text-cyan-300 border border-cyan-500/30 flex items-center gap-1.5 shadow-lg">
+                  <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                  AI/ML Developer
+                </div>
+
+                <!-- Top Right Location -->
+                <div class="absolute top-3 right-3 px-2.5 py-1 rounded-full text-[11px] font-mono bg-slate-950/85 backdrop-blur-md text-slate-300 border border-white/10 flex items-center gap-1 shadow-lg">
+                  <i data-lucide="map-pin" class="w-3 h-3 text-cyan-400"></i> Indore, MP
+                </div>
+
+                <!-- Bottom Telemetry HUD Card -->
+                <div class="absolute bottom-3 inset-x-3 p-3.5 rounded-xl bg-slate-900/90 backdrop-blur-md border border-white/10 space-y-2 shadow-2xl">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h3 class="font-bold text-sm text-white">Krishna Sharma</h3>
+                      <p class="text-[11px] font-mono text-cyan-300">IES IPS Academy, Indore • 3rd Year</p>
+                    </div>
+                    <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold flex items-center gap-1">
+                      <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Verified
+                    </span>
+                  </div>
+                  <div class="flex items-center justify-between pt-1.5 border-t border-white/10 text-[10px] font-mono text-slate-400">
+                    <span class="text-slate-300">Python • PyTorch • Vision • ROS</span>
+                    <span class="text-emerald-400 font-semibold">● API Backend Live</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics Ribbon with Animated Numerical Counting -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 w-full max-w-4xl">
+        <div class="glass-card rounded-2xl p-4 border border-white/5">
+          <div class="text-2xl font-bold font-mono text-cyan-400 counter-val" data-target="7.56" data-decimals="2">7.56</div>
+          <div class="text-xs text-slate-400 font-mono mt-0.5">Current CGPA (5th Sem)</div>
+        </div>
+        <div class="glass-card rounded-2xl p-4 border border-white/5">
+          <div class="text-2xl font-bold font-mono text-emerald-400 counter-val" data-target="3" data-suffix="rd Year">3rd Year</div>
+          <div class="text-xs text-slate-400 font-mono mt-0.5">B.Tech CSE Core (2028)</div>
+        </div>
+        <div class="glass-card rounded-2xl p-4 border border-white/5">
+          <div class="text-2xl font-bold font-mono text-amber-400 counter-val" data-target="2" data-suffix=" Internships">2 Internships</div>
+          <div class="text-xs text-slate-400 font-mono mt-0.5">AI/ML &amp; Cybersecurity</div>
+        </div>
+        <div class="glass-card rounded-2xl p-4 border border-white/5">
+          <div class="text-2xl font-bold font-mono text-violet-400 counter-val" data-target="3" data-suffix=" Projects">3 Projects</div>
+          <div class="text-xs text-slate-400 font-mono mt-0.5">CV, Robotics &amp; Spatial AI</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. ABOUT ME & ACADEMICS
+         ====================================================================== -->
+    <section id="about" class="space-y-12">
+      <!-- Section Header -->
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Profile Overview
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">About Me</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Narrative Text Area -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-white/10 space-y-4 text-slate-300 leading-relaxed text-sm sm:text-base">
+            <p>
+              I am a third-year Bachelor of Technology student in Computer Science & Engineering at <strong>IES IPS Academy, Indore</strong>, with a strong interest in Artificial Intelligence, Machine Learning, Python development, Computer Vision, Cybersecurity, and emerging technologies.
+            </p>
+            <p>
+              I enjoy building practical technology solutions that combine software, AI, and real-world problem solving. My experience includes AI/ML development, computer vision, cybersecurity training, cloud programs, technical projects, workshops, hackathons, and student activities.
+            </p>
+            <p class="text-xs text-slate-400 font-mono border-t border-white/5 pt-4">
+              Focus areas: Edge-optimized vision models, monocular spatial depth, non-blocking asynchronous architectures, and defensive software security.
+            </p>
+          </div>
+
+          <!-- Technical Interests Grid -->
+          <div class="space-y-3">
+            <h3 class="text-xs font-mono uppercase text-slate-400 tracking-wider">Key Technical Interests</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+              <div class="glass-card rounded-xl p-3 border border-white/5 flex items-center gap-2.5">
+                <i data-lucide="brain" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+                <span class="text-xs font-medium text-white truncate">Artificial Intelligence</span>
+              </div>
+              <div class="glass-card rounded-xl p-3 border border-white/5 flex items-center gap-2.5">
+                <i data-lucide="cpu" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                <span class="text-xs font-medium text-white truncate">Machine Learning</span>
+              </div>
+              <div class="glass-card rounded-xl p-3 border border-white/5 flex items-center gap-2.5">
+                <i data-lucide="code" class="w-4 h-4 text-cyan-400 shrink-0"></i>
+                <span class="text-xs font-medium text-white truncate">Python Development</span>
+              </div>
+              <div class="glass-card rounded-xl p-3 border border-white/5 flex items-center gap-2.5">
+                <i data-lucide="eye" class="w-4 h-4 text-amber-400 shrink-0"></i>
+                <span class="text-xs font-medium text-white truncate">Computer Vision</span>
+              </div>
+              <div class="glass-card rounded-xl p-3 border border-white/5 flex items-center gap-2.5">
+                <i data-lucide="shield" class="w-4 h-4 text-red-400 shrink-0"></i>
+                <span class="text-xs font-medium text-white truncate">Cybersecurity</span>
+              </div>
+              <div class="glass-card rounded-xl p-3 border border-white/5 flex items-center gap-2.5">
+                <i data-lucide="cloud" class="w-4 h-4 text-blue-400 shrink-0"></i>
+                <span class="text-xs font-medium text-white truncate">Cloud Computing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compact Academic & Status Card -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="glass-panel rounded-2xl p-6 border border-cyan-500/20 space-y-5 shadow-glass">
+            <div class="flex items-center justify-between pb-4 border-b border-white/10">
+              <div class="flex items-center gap-3">
+                <div class="relative w-12 h-12 rounded-xl overflow-hidden border border-cyan-400/50 shadow-[0_0_12px_rgba(6,182,212,0.35)] shrink-0">
+                  <img src="assets/images/krishna_sharma.jpg" alt="Krishna Sharma" class="w-full h-full object-cover object-top" style="object-position: center 20%;">
+                </div>
+                <div>
+                  <h3 class="text-base font-bold text-white">Krishna Sharma</h3>
+                  <p class="text-xs text-slate-400 font-mono">B.Tech CSE Core</p>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 rounded-full text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+                Verified Student
+              </span>
+            </div>
+
+            <!-- Academic Snapshot Fields -->
+            <div class="space-y-3 text-xs font-mono">
+              <div class="flex justify-between py-1.5 border-b border-white/5">
+                <span class="text-slate-400">Institution</span>
+                <span class="text-white font-medium text-right">IES IPS Academy, Indore</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-white/5">
+                <span class="text-slate-400">Branch</span>
+                <span class="text-cyan-400 font-medium text-right">Computer Science & Engineering</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-white/5">
+                <span class="text-slate-400">Current Standing</span>
+                <span class="text-white font-medium text-right">3rd Year (5th Semester)</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-white/5">
+                <span class="text-slate-400">Academic CGPA</span>
+                <span class="text-emerald-400 font-bold text-sm text-right">7.56</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-white/5">
+                <span class="text-slate-400">Expected Graduation</span>
+                <span class="text-white font-medium text-right">2028</span>
+              </div>
+              <div class="flex justify-between py-1.5">
+                <span class="text-slate-400">Location</span>
+                <span class="text-slate-200 text-right">Indore, MP, India</span>
+              </div>
+            </div>
+
+            <!-- Download Button in Card -->
+            <button class="download-resume-btn w-full py-2.5 rounded-xl bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 text-xs font-mono font-semibold hover:bg-cyan-500 hover:text-slate-950 transition-all flex items-center justify-center gap-2">
+              <i data-lucide="file-check" class="w-4 h-4"></i> View Resume Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. EDUCATION SECTION
+         ====================================================================== -->
+    <section id="education" class="space-y-10">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Academic Timeline
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Education</h2>
+      </div>
+
+      <!-- Vertical Timeline for Education -->
+      <div id="education-timeline" class="max-w-4xl space-y-6">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. TECHNICAL SKILLS SECTION (CATEGORIZED, NO FAKE PERCENTAGES)
+         ====================================================================== -->
+    <section id="skills" class="space-y-10">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div class="space-y-2">
+          <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+            <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Core Competencies
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Technical Skills</h2>
+          <p class="text-xs text-slate-400 font-mono">
+            Categorized technical stack based on real project and laboratory implementation.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div id="skill-tabs" class="flex flex-wrap gap-1.5">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+
+      <!-- Skills Grid -->
+      <div id="skills-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. INTERNSHIPS & EXPERIENCE
+         ====================================================================== -->
+    <section id="experience" class="space-y-10">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Hands-On Experience
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Internships & Professional Training</h2>
+        <p class="text-xs text-slate-400 font-mono">
+          Practical industry internships in AI/ML Python development and Defensive Software Security.
+        </p>
+      </div>
+
+      <!-- Vertical Experience Timeline -->
+      <div id="experience-timeline" class="max-w-4xl space-y-8">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. FEATURED PROJECTS SECTION (WITH SIGNATURE PROJECT 03)
+         ====================================================================== -->
+    <section id="projects" class="space-y-12">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Engineering Portfolio
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Featured Projects</h2>
+        <p class="text-sm text-slate-300 max-w-3xl leading-relaxed">
+          Applied technology projects combining computer vision, deep learning, ROS 2 robotics, asynchronous architectures, and edge deployments.
+        </p>
+      </div>
+
+      <!-- Projects Container -->
+      <div id="projects-container">
+        <!-- Rendered dynamically by app.js (Includes Signature Project 03 at the top) -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. SIGNATURE PROJECT INTERACTIVE SIMULATOR SUITE
+         ====================================================================== -->
+    <section id="depth-simulator-anchor" class="space-y-10 pt-4">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span> Signature Project Interactive Lab
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Spatial Perception &amp; Heatmap Dashboard Simulator
+        </h2>
+        <p class="text-sm text-slate-300 max-w-3xl leading-relaxed">
+          Interactive simulation demonstrating the real-time capabilities of the <strong>Autonomous Depth Navigation Assistant</strong>: dual-stream MJPEG rendering, MiDaS dense depth in <code>COLORMAP_INFERNO</code>, dynamic distance calibration formula $d = \frac{\alpha}{\text{disparity} + \varepsilon}$, and the forensic blackbox incident logger.
+        </p>
+      </div>
+
+      <!-- Depth Dashboard Simulator Container -->
+      <div id="depth-dashboard-container">
+        <!-- Rendered dynamically by depth-dashboard.js -->
+      </div>
+
+      <!-- Distance Calibration & Mathematical Breakdown -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mt-10">
+        <!-- Mathematical Formula Card -->
+        <div class="lg:col-span-6 glass-panel rounded-2xl p-6 border border-white/10 space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-white/10">
+            <span class="text-xs font-mono text-cyan-400 uppercase font-semibold">1. Sensorless Metric Distance Formula</span>
+            <span class="text-xs font-mono text-slate-400">Calibration α = 450.0</span>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-950 font-mono text-center border border-cyan-500/20 shadow-inner">
+            <span class="text-xs text-slate-400 block mb-1">Inverse Disparity Calibration Math</span>
+            <span class="text-xl sm:text-2xl font-bold text-gradient-cyan">d = α / (disparity + ε)</span>
+            <span class="text-[11px] text-slate-500 block mt-1">where ε = 1e-5 (division by zero safeguard)</span>
+          </div>
+
+          <div class="space-y-2 text-xs text-slate-300 leading-relaxed">
+            <p>
+              Standard monocular cameras do not emit time-of-flight pulses or stereo disparity. Intel MiDaS-Small computes a dense relative inverse depth field. By computing the <strong>80th-percentile disparity</strong> inside detected YOLOv8 bounding boxes and scaling via the calibrated focal constant $\alpha = 450.0$, the system derives an estimated metric physical distance.
+            </p>
+            <div class="grid grid-cols-2 gap-2 pt-2 font-mono text-[11px]">
+              <div class="p-2.5 rounded-lg bg-slate-900 border border-white/5">
+                <span class="text-amber-400 font-bold block">Near Field Zone</span>
+                <span class="text-slate-300">0.3 m – 2.2 m (Hazard proximity)</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-900 border border-white/5">
+                <span class="text-cyan-400 font-bold block">Far Field Zone</span>
+                <span class="text-slate-300">2.2 m – 8.0 m (Open corridor horizon)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Calculator -->
+          <div class="p-4 rounded-xl bg-slate-900/80 border border-white/10 space-y-3 font-mono text-xs">
+            <div class="text-slate-300 font-semibold flex justify-between">
+              <span>Interactive Distance Tester</span>
+              <span id="calc-disp-val" class="text-cyan-400">380</span> Disparity
+            </div>
+            <input type="range" id="calc-disparity-slider" min="50" max="600" value="380" class="w-full accent-cyan-400">
+            <div class="flex items-center gap-3">
+              <span class="text-slate-400">α value:</span>
+              <input type="number" id="calc-alpha-input" value="450" class="w-20 px-2 py-1 rounded bg-slate-950 border border-white/10 text-white font-mono text-xs">
+              <div class="ml-auto text-right">
+                <span class="text-slate-400 block text-[10px]">Calculated:</span>
+                <span id="calc-res-distance" class="text-sm font-bold text-white">1.18 m</span>
+              </div>
+            </div>
+            <div id="calc-res-zone" class="text-amber-400 font-bold text-xs pt-1 border-t border-white/5">
+              WARNING ZONE (Near Field)
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Procedural Room Simulator Preview -->
+        <div class="lg:col-span-6 glass-panel rounded-2xl p-6 border border-white/10 space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-white/10">
+            <div>
+              <span class="text-xs font-mono text-cyan-400 uppercase font-semibold">2. Procedural 3D Room Simulator</span>
+              <span class="block text-[11px] text-slate-400">Offline Automated Spatial Evaluation</span>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+              Interactive Canvas
+            </span>
+          </div>
+
+          <div id="room-sim-container" class="relative w-full aspect-[16/10] bg-slate-950 rounded-xl overflow-hidden border border-white/10">
+            <!-- Canvas inserted by room-sim.js -->
+          </div>
+
+          <!-- Room Simulator Controls -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
+            <div>
+              <label class="text-[11px] text-slate-400 block mb-1">Target Obstacle</label>
+              <select id="room-obstacle-select" class="w-full px-2 py-1.5 rounded-lg bg-slate-900 border border-white/10 text-white text-xs">
+                <option value="person">Human Obstacle</option>
+                <option value="chair">Office Chair</option>
+                <option value="head_hazard">Head Hazard (Cabinet)</option>
+                <option value="ground_hazard">Ground Hazard (Curb)</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-[11px] text-slate-400 block mb-1">Camera X Pan</label>
+              <input type="range" id="room-cam-slider" min="-1" max="1" step="0.05" value="0" class="w-full accent-cyan-400 mt-2">
+            </div>
+            <div>
+              <label class="text-[11px] text-slate-400 block mb-1">Simulated Distance</label>
+              <input type="range" id="room-dist-slider" min="0.4" max="4.0" step="0.1" value="1.35" class="w-full accent-amber-400 mt-2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         8. CERTIFICATIONS & PROGRAMS
+         ====================================================================== -->
+    <section id="certifications" class="space-y-10">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Recognized Accreditations
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Certifications & Programs</h2>
+        <p class="text-xs text-slate-400 font-mono">
+          Formal credentials, leadership recognitions, and competitive hackathon initiatives.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        <!-- Formal Certifications Grid -->
+        <div class="space-y-3">
+          <h3 class="text-xs font-mono uppercase text-slate-400 tracking-wider">Formal Certifications & Leadership</h3>
+          <div id="formal-certifications" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Programs & Participation (Cleanly separated from formal certs) -->
+        <div class="space-y-3">
+          <h3 class="text-xs font-mono uppercase text-slate-400 tracking-wider">Programs & Competitive Participation</h3>
+          <div id="programs-participation" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         9. WORKSHOPS & LEARNING EXPERIENCES
+         ====================================================================== -->
+    <section id="workshops" class="space-y-10">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Specialized Training
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Workshops & Learning Experiences</h2>
+        <p class="text-xs text-slate-400 font-mono">
+          Practical workshops with industry organizations and governmental institutes.
+        </p>
+      </div>
+
+      <div id="workshops-container" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         10. ACHIEVEMENTS & RECOGNITIONS
+         ====================================================================== -->
+    <section id="achievements" class="space-y-10">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Honors & Awards
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Key Achievements</h2>
+      </div>
+
+      <div id="achievements-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         11. NSS & VOLUNTEERING
+         ====================================================================== -->
+    <section id="volunteering" class="space-y-10">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Civic Engagement
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">NSS & Volunteering</h2>
+        <p class="text-sm text-slate-300 max-w-3xl leading-relaxed">
+          National Service Scheme (NSS) volunteer contributing leadership, campus coordination, and civic community engagement.
+        </p>
+      </div>
+
+      <div id="nss-container" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         12. DEVELOPER PRESENCE
+         ====================================================================== -->
+    <section id="developer" class="space-y-10">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Online Profiles
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Developer Presence</h2>
+        <p class="text-xs text-slate-400 font-mono">
+          Profiles and code repositories across developer and competitive programming platforms.
+        </p>
+      </div>
+
+      <div id="developer-profiles-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         13. CONTACT SECTION
+         ====================================================================== -->
+    <section id="contact" class="space-y-10">
+      <div class="space-y-2">
+        <div class="inline-flex items-center gap-2 text-xs font-mono text-cyan-400 uppercase tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-cyan-400"></span> Get In Touch
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Contact Krishna</h2>
+        <p class="text-sm text-slate-300 max-w-2xl leading-relaxed">
+          Interested in discussing internship opportunities, AI/ML research collaborations, hackathons, or engineering projects? Feel free to reach out.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Contact Information Card -->
+        <div class="lg:col-span-5 glass-panel rounded-2xl p-6 sm:p-8 border border-white/10 space-y-6">
+          <div>
+            <h3 class="text-xl font-bold text-white">Krishna Sharma</h3>
+            <p class="text-xs text-cyan-400 font-mono mt-0.5">B.Tech CSE (AI/ML) Student</p>
+            <p class="text-xs text-slate-400 mt-2">Indore, Madhya Pradesh, India</p>
+          </div>
+
+          <div class="space-y-4 pt-4 border-t border-white/10 text-xs font-mono">
+            <!-- Email -->
+            <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-white/5">
+              <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </div>
+              <div class="min-w-0 flex-1">
+                <span class="text-slate-400 block text-[10px]">DIRECT EMAIL</span>
+                <a href="mailto:Krishna.123mrkpro@gmail.com" class="text-white hover:text-cyan-300 transition-colors truncate block font-medium">
+                  Krishna.123mrkpro@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <!-- Phone with Privacy Reveal -->
+            <div class="flex items-center justify-between gap-3 p-3 rounded-xl bg-slate-900/60 border border-white/5">
+              <div class="flex items-center gap-3 min-w-0">
+                <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center shrink-0">
+                  <i data-lucide="phone" class="w-4 h-4"></i>
+                </div>
+                <div>
+                  <span class="text-slate-400 block text-[10px]">PHONE / WHATSAPP</span>
+                  <span id="contact-phone-text" class="text-white font-medium">+91 62664 •••••</span>
+                </div>
+              </div>
+              <button id="reveal-phone-btn" class="px-2.5 py-1 rounded-lg text-[11px] font-mono bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 hover:bg-cyan-500 hover:text-slate-950 transition-all flex items-center gap-1">
+                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Reveal
+              </button>
+            </div>
+
+            <!-- Social Links -->
+            <div class="grid grid-cols-2 gap-2 pt-2">
+              <a href="https://www.linkedin.com/in/krishna-sharma-a08065326?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-900/80 border border-white/5 hover:border-cyan-500/30 text-slate-300 hover:text-white flex items-center justify-center gap-2 transition-all">
+                <i data-lucide="linkedin" class="w-4 h-4 text-cyan-400"></i> LinkedIn
+              </a>
+              <a href="https://github.com/Sharmaji2209-bot" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-900/80 border border-white/5 hover:border-cyan-500/30 text-slate-300 hover:text-white flex items-center justify-center gap-2 transition-all">
+                <i data-lucide="github" class="w-4 h-4 text-cyan-400"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7 glass-panel rounded-2xl p-6 sm:p-8 border border-white/10">
+          <form id="portfolio-contact-form" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="contact-name" class="block text-xs font-mono text-slate-300 mb-1.5">Your Name *</label>
+                <input type="text" id="contact-name" required placeholder="e.g. Alex Morgan" class="glass-input w-full px-4 py-2.5 rounded-xl text-sm font-sans focus:ring-0">
+              </div>
+              <div>
+                <label for="contact-email" class="block text-xs font-mono text-slate-300 mb-1.5">Your Email *</label>
+                <input type="email" id="contact-email" required placeholder="alex@company.com" class="glass-input w-full px-4 py-2.5 rounded-xl text-sm font-sans focus:ring-0">
+              </div>
+            </div>
+
+            <div>
+              <label for="contact-subject" class="block text-xs font-mono text-slate-300 mb-1.5">Subject</label>
+              <input type="text" id="contact-subject" placeholder="Internship Opportunity / Project Collaboration" class="glass-input w-full px-4 py-2.5 rounded-xl text-sm font-sans focus:ring-0">
+            </div>
+
+            <div>
+              <label for="contact-message" class="block text-xs font-mono text-slate-300 mb-1.5">Message *</label>
+              <textarea id="contact-message" rows="4" required placeholder="Hello Krishna, I reviewed your autonomous depth navigation project and would like to discuss..." class="glass-input w-full px-4 py-2.5 rounded-xl text-sm font-sans focus:ring-0 resize-none"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-semibold text-xs font-mono tracking-wider hover:brightness-110 transition-all shadow-[0_0_20px_rgba(6,182,212,0.3)] flex items-center justify-center gap-2">
+              <i data-lucide="send" class="w-4 h-4"></i> Send Message
+            </button>
+            <p class="text-[11px] text-slate-500 text-center font-mono">
+              Direct client-side dispatch. No external analytics or tracking scripts attached.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       Minimal Modern Footer
+       ======================================================================== -->
+  <footer class="border-t border-white/10 bg-[#070a13]/90 relative z-10 text-xs font-mono text-slate-400 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-1 text-center md:text-left">
+        <div class="text-sm font-bold text-white">Krishna Sharma</div>
+        <p class="text-slate-400 text-xs">Building, learning, and exploring AI-driven solutions.</p>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="https://github.com/Sharmaji2209-bot" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors">GitHub</a>
+        <a href="https://www.linkedin.com/in/krishna-sharma-a08065326?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors">LinkedIn</a>
+        <a href="mailto:Krishna.123mrkpro@gmail.com" class="hover:text-cyan-400 transition-colors">Email</a>
+        <button id="toggle-motion-btn" class="px-2.5 py-1 rounded bg-slate-900 border border-white/10 text-slate-400 hover:text-white flex items-center gap-1.5 transition">
+          <i data-lucide="zap" class="w-3.5 h-3.5"></i> Motion
+        </button>
+      </div>
+
+      <div class="text-slate-500 text-[11px]">
+        © 2026 Krishna Sharma. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Project Details Modal
+       ======================================================================== -->
+  <div id="project-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-content glass-panel w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-3xl p-6 sm:p-8 border border-cyan-500/30 shadow-2xl relative">
+      <div id="project-modal-content">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SMART ATTENDANCE OPERATIONAL CONSOLE MODAL
+       ======================================================================== -->
+  <div id="attendance-operational-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4">
+    <div class="modal-content glass-panel w-full max-w-5xl max-h-[92vh] overflow-y-auto rounded-3xl p-5 sm:p-8 border border-cyan-500/40 shadow-2xl space-y-6">
+      <!-- Modal Header -->
+      <div class="flex items-start justify-between pb-4 border-b border-white/10">
+        <div>
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 mb-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            LIVE BACKEND API: PORT 3000 • SQLITE PERSISTENT
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
+            <i data-lucide="scan-face" class="w-6 h-6 text-cyan-400"></i>
+            Smart Attendance System — Biometric Verification Console
+          </h3>
+          <p class="text-xs text-slate-300 font-mono mt-1">
+            Real-time biometric verification engine interfacing with <code>/api/attendance/verify</code> and the live attendance ledger.
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="/api/attendance/export" download="attendance_records.csv" id="btn-export-attendance-csv" class="px-3 py-1.5 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-mono hover:bg-emerald-500 hover:text-slate-950 transition flex items-center gap-1.5 shadow-[0_0_15px_rgba(16,185,129,0.3)]">
+            <i data-lucide="download" class="w-3.5 h-3.5"></i> Export CSV Ledger
+          </a>
+          <button id="close-attendance-modal" class="p-2 rounded-xl bg-slate-800 text-slate-400 hover:text-white transition">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Real-Time Metrics Strip -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-xs">
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+          <span class="text-slate-400 text-[10px] block">TOTAL MARKED</span>
+          <span id="att-stat-total" class="text-lg font-bold text-cyan-400">5 Marked</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+          <span class="text-slate-400 text-[10px] block">PRESENT (ON TIME)</span>
+          <span id="att-stat-present" class="text-lg font-bold text-emerald-400">4 Students</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+          <span class="text-slate-400 text-[10px] block">LATE ENTRIES</span>
+          <span id="att-stat-late" class="text-lg font-bold text-amber-400">1 Student</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+          <span class="text-slate-400 text-[10px] block">ANTI-SPOOF LIVENESS</span>
+          <span class="text-lg font-bold text-emerald-400 flex items-center gap-1.5">
+            <i data-lucide="shield-check" class="w-4 h-4"></i> ACTIVE
+          </span>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs (Scanner vs Enrollment) -->
+      <div class="flex items-center gap-2 border-b border-white/10 pb-3 font-mono text-xs">
+        <button id="tab-att-scanner" class="px-4 py-2 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold transition flex items-center gap-2">
+          <i data-lucide="camera" class="w-4 h-4"></i> Live Scanner &amp; Quick Verify
+        </button>
+        <button id="tab-att-enroll" class="px-4 py-2 rounded-xl bg-slate-900 text-slate-400 hover:text-white border border-white/10 transition flex items-center gap-2">
+          <i data-lucide="user-plus" class="w-4 h-4"></i> Enroll New Student / Staff
+        </button>
+      </div>
+
+      <!-- Main Operational Console Body (2 Columns) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left: Live Biometric Scanner HUD & Verification Controls -->
+        <div class="lg:col-span-5 space-y-4">
+          <!-- Viewfinder Tab Content -->
+          <div id="panel-att-scanner" class="space-y-4">
+            <div class="p-4 rounded-2xl bg-slate-950 border border-cyan-500/30 relative overflow-hidden shadow-inner space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-mono text-cyan-400 uppercase tracking-wider block">Biometric Viewfinder</span>
+                <button id="btn-toggle-att-webcam" class="px-2.5 py-1 rounded bg-slate-800 text-cyan-300 text-[10px] font-mono hover:bg-slate-700 transition flex items-center gap-1">
+                  <i data-lucide="camera" class="w-3 h-3"></i> Toggle Webcam
+                </button>
+              </div>
+              
+              <!-- Scanner Visualizer with Targeting Box -->
+              <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-slate-900 border border-white/10 flex items-center justify-center">
+                <img id="att-viewfinder-img" src="assets/images/attendance_system.jpg" alt="Biometric Scanner" class="w-full h-full object-cover opacity-75">
+                <video id="att-webcam-video" autoplay playsinline muted class="hidden w-full h-full object-cover"></video>
+                <canvas id="att-face-canvas" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+                
+                <!-- Scanning Laser Beam -->
+                <div class="laser-scanner"></div>
+
+                <!-- Reticle Target Overlay -->
+                <div class="absolute inset-8 border-2 border-dashed border-cyan-400/60 rounded-xl flex flex-col justify-between p-2 pointer-events-none">
+                  <div class="flex justify-between text-[10px] font-mono text-cyan-300 bg-slate-950/80 px-2 py-0.5 rounded">
+                    <span>MTCNN ALIGN</span>
+                    <span>128D VECTOR</span>
+                  </div>
+                  <div class="text-center font-mono text-[11px] text-emerald-400 bg-slate-950/85 px-2 py-1 rounded border border-emerald-500/30">
+                    LIVENESS: HEURISTIC PASS
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Trigger Presets -->
+              <div class="space-y-2 pt-2">
+                <span class="text-[10px] font-mono text-slate-400 uppercase tracking-wider block">Quick 1-Click Verification Tests</span>
+                <div class="grid grid-cols-2 gap-2 text-xs font-mono">
+                  <button id="btn-quick-verify-krishna" class="p-2 rounded-xl bg-gradient-to-r from-cyan-500/20 to-blue-600/20 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500 hover:text-slate-950 transition font-bold text-left flex items-center gap-1.5">
+                    <span>👤</span> Krishna Sharma
+                  </button>
+                  <button class="btn-quick-verify-preset p-2 rounded-xl bg-slate-900 border border-white/10 text-slate-300 hover:text-cyan-300 hover:border-cyan-500/30 transition text-left flex items-center gap-1.5" data-name="Priyanshu Patidar" data-id="STU-2023-AI02">
+                    <span>👤</span> Priyanshu P.
+                  </button>
+                  <button class="btn-quick-verify-preset p-2 rounded-xl bg-slate-900 border border-white/10 text-slate-300 hover:text-cyan-300 hover:border-cyan-500/30 transition text-left flex items-center gap-1.5" data-name="Sakshi Verma" data-id="STU-2023-AI03">
+                    <span>👤</span> Sakshi Verma
+                  </button>
+                  <button class="btn-quick-verify-preset p-2 rounded-xl bg-slate-900 border border-white/10 text-slate-300 hover:text-cyan-300 hover:border-cyan-500/30 transition text-left flex items-center gap-1.5" data-name="Faculty Admin" data-id="FAC-AI-01">
+                    <span>🎓</span> Faculty Admin
+                  </button>
+                </div>
+              </div>
+
+              <!-- Custom Student Check-in Form -->
+              <div class="p-3 rounded-xl bg-slate-900/90 border border-white/10 space-y-2.5 text-xs font-mono">
+                <span class="text-[11px] text-slate-300 font-semibold block">Custom Student Verification</span>
+                <input type="text" id="att-input-name" placeholder="Student Full Name" value="Krishna Sharma" class="w-full px-3 py-1.5 rounded-lg bg-slate-950 border border-white/10 text-white text-xs">
+                <input type="text" id="att-input-id" placeholder="Student ID (e.g. STU-2023-AI01)" value="STU-2023-AI01" class="w-full px-3 py-1.5 rounded-lg bg-slate-950 border border-white/10 text-white text-xs">
+                <div class="flex gap-2">
+                  <select id="att-select-node" class="w-full px-2 py-1.5 rounded-lg bg-slate-950 border border-white/10 text-white text-xs">
+                    <option value="NODE_ENTRANCE_CAM_01">Entrance Cam 01</option>
+                    <option value="NODE_LAB_304_CAM_02">AI/ML Lab 304 Cam</option>
+                    <option value="NODE_SEMINAR_HALL_03">Seminar Hall Cam</option>
+                  </select>
+                  <button id="btn-submit-attendance" class="px-4 py-1.5 rounded-lg bg-cyan-500 text-slate-950 font-bold hover:bg-cyan-400 transition text-xs shrink-0 shadow-[0_0_10px_rgba(6,182,212,0.4)]">
+                    Verify
+                  </button>
+                </div>
+              </div>
+
+              <!-- Live Verification Result Feedback Box -->
+              <div id="att-verify-feedback" class="hidden p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/40 text-xs font-mono text-emerald-300 space-y-1">
+                <div class="flex items-center justify-between font-bold">
+                  <span id="att-feedback-status">VERIFIED PRESENT</span>
+                  <span id="att-feedback-conf">98.4% Match</span>
+                </div>
+                <div id="att-feedback-details" class="text-[11px] text-slate-300">
+                  Student verified and written to backend SQLite ledger.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enrollment Tab Content (Hidden by default) -->
+          <div id="panel-att-enroll" class="hidden p-4 rounded-2xl bg-slate-950 border border-white/10 space-y-3 font-mono text-xs">
+            <span class="text-xs font-bold text-white block">Enroll New Student / Staff Biometric Vector</span>
+            <p class="text-[11px] text-slate-400 leading-relaxed">
+              Generates a normalized 128-dimensional facial embedding vector and commits it directly to the backend SQLite <code>enrolled_faces</code> database table.
+            </p>
+            <div class="space-y-2 pt-2">
+              <div>
+                <label class="text-[10px] text-slate-400 block mb-1">Full Name</label>
+                <input type="text" id="enroll-name" placeholder="e.g. Yashvardhan Chouhan" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-white/10 text-white text-xs">
+              </div>
+              <div>
+                <label class="text-[10px] text-slate-400 block mb-1">Student / Employee ID</label>
+                <input type="text" id="enroll-id" placeholder="e.g. STU-2023-AI08" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-white/10 text-white text-xs">
+              </div>
+              <div>
+                <label class="text-[10px] text-slate-400 block mb-1">Department / Branch</label>
+                <input type="text" id="enroll-dept" value="B.Tech CSE (AI/ML)" class="w-full px-3 py-2 rounded-lg bg-slate-900 border border-white/10 text-white text-xs">
+              </div>
+              <button id="btn-submit-enrollment" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 text-slate-950 font-bold hover:brightness-110 transition shadow-[0_0_15px_rgba(16,185,129,0.35)] flex items-center justify-center gap-2 mt-3">
+                <i data-lucide="user-plus" class="w-4 h-4"></i> Commit Biometric Vector to SQLite
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Live Attendance Registry (Pulled live from SQLite) -->
+        <div class="lg:col-span-7 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-mono text-slate-300 font-semibold uppercase tracking-wider flex items-center gap-1.5">
+              <i data-lucide="database" class="w-3.5 h-3.5 text-cyan-400"></i>
+              Live Attendance Registry (SQLite Table)
+            </span>
+            <button id="btn-refresh-attendance" class="px-2.5 py-1 rounded-lg bg-slate-800 text-cyan-300 text-[11px] font-mono hover:bg-slate-700 transition flex items-center gap-1">
+              <i data-lucide="refresh-cw" class="w-3 h-3"></i> Sync Backend
+            </button>
+          </div>
+
+          <!-- Table Container -->
+          <div class="rounded-2xl border border-white/10 bg-slate-950/90 overflow-hidden shadow-xl max-h-[440px] overflow-y-auto">
+            <table class="w-full text-left text-xs font-mono">
+              <thead class="bg-slate-900/90 text-slate-400 border-b border-white/10 sticky top-0 backdrop-blur-md">
+                <tr>
+                  <th class="p-3">Student Name</th>
+                  <th class="p-3">ID &amp; Branch</th>
+                  <th class="p-3">Status</th>
+                  <th class="p-3">Confidence</th>
+                  <th class="p-3">Timestamp</th>
+                </tr>
+              </thead>
+              <tbody id="att-table-body" class="divide-y divide-white/5 text-slate-200">
+                <!-- Dynamically populated from /api/attendance/records -->
+                <tr>
+                  <td colspan="5" class="p-4 text-center text-slate-500">Connecting to backend database...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="text-[10px] font-mono text-slate-500 flex justify-between items-center px-1">
+            <span>Verified biometric embeddings via MTCNN &amp; MobileFaceNet</span>
+            <span>Table: <code>attendance_records</code></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       AUTONOMOUS ASSISTIVE ROBOTICS OPERATIONAL CONSOLE MODAL
+       ======================================================================== -->
+  <div id="assistive-operational-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4">
+    <div class="modal-content glass-panel w-full max-w-5xl max-h-[92vh] overflow-y-auto rounded-3xl p-5 sm:p-8 border border-amber-500/40 shadow-2xl space-y-6">
+      <!-- Modal Header -->
+      <div class="flex items-start justify-between pb-4 border-b border-white/10">
+        <div>
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-amber-500/10 text-amber-300 border border-amber-500/30 mb-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            ROS 2 &amp; MQTT TELEMETRY ENGINE • PORT 3000
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
+            <i data-lucide="bot" class="w-6 h-6 text-amber-400"></i>
+            Autonomous Assistance System — Robotics Control Console
+          </h3>
+          <p class="text-xs text-slate-300 font-mono mt-1">
+            Interactive multi-modal robotics navigation console communicating with <code>/api/assistive/command</code> and live telemetry sensors.
+          </p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="btn-ast-fall-sos" class="px-3 py-1.5 rounded-xl bg-red-600/30 text-red-300 border border-red-500/40 text-xs font-mono hover:bg-red-600 hover:text-white transition flex items-center gap-1.5 shadow-[0_0_15px_rgba(239,68,68,0.4)]">
+            <span>🚨</span> Trigger Fall SOS
+          </button>
+          <button id="close-assistive-modal" class="p-2 rounded-xl bg-slate-800 text-slate-400 hover:text-white transition">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Real-Time Telemetry Bar -->
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 font-mono text-xs">
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+          <span class="text-slate-400 text-[10px] block">BATTERY SOC</span>
+          <span id="ast-stat-battery" class="text-lg font-bold text-emerald-400">92.4%</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+          <span class="text-slate-400 text-[10px] block">LINEAR VELOCITY</span>
+          <span id="ast-stat-speed" class="text-lg font-bold text-cyan-400">0.85 m/s</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+          <span class="text-slate-400 text-[10px] block">HEADING</span>
+          <span id="ast-stat-heading" class="text-lg font-bold text-white">284° NW</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5">
+          <span class="text-slate-400 text-[10px] block">LIDAR CLEARANCE</span>
+          <span id="ast-stat-clearance" class="text-lg font-bold text-amber-400">2.45 m</span>
+        </div>
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 col-span-2 sm:col-span-1">
+          <span class="text-slate-400 text-[10px] block">BRAKE STATE</span>
+          <span id="ast-stat-brake" class="text-sm font-bold text-emerald-400 mt-1">NORMAL DISENGAGED</span>
+        </div>
+      </div>
+
+      <!-- Main Operational Console Body (2 Columns) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left: Kinematics D-Pad & Voice Commands -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="p-5 rounded-2xl bg-slate-950 border border-white/10 space-y-4">
+            <span class="text-xs font-mono text-amber-400 uppercase font-semibold flex items-center gap-1.5">
+              <i data-lucide="gamepad-2" class="w-4 h-4"></i> Kinematics Directional Controller
+            </span>
+
+            <!-- Directional Controller D-Pad -->
+            <div class="flex flex-col items-center justify-center gap-2 pt-2">
+              <button class="ast-cmd-btn px-6 py-2.5 rounded-xl bg-slate-800 text-white font-mono text-xs hover:bg-cyan-500 hover:text-slate-950 transition flex items-center gap-1.5 border border-white/10 shadow-lg" data-cmd="FORWARD">
+                <i data-lucide="arrow-up" class="w-4 h-4"></i> FORWARD (0.8 m/s)
+              </button>
+              <div class="flex items-center gap-3">
+                <button class="ast-cmd-btn px-5 py-2.5 rounded-xl bg-slate-800 text-white font-mono text-xs hover:bg-cyan-500 hover:text-slate-950 transition flex items-center gap-1.5 border border-white/10 shadow-lg" data-cmd="TURN_LEFT">
+                  <i data-lucide="arrow-left" class="w-4 h-4"></i> LEFT 45°
+                </button>
+                <button class="ast-cmd-btn px-5 py-3 rounded-xl bg-red-600/90 text-white font-mono text-xs font-bold hover:bg-red-500 transition flex items-center gap-1.5 border border-red-400/40 shadow-[0_0_15px_rgba(239,68,68,0.5)]" data-cmd="EMERGENCY_STOP">
+                  <i data-lucide="octagon-alert" class="w-4 h-4"></i> EMERGENCY HALT
+                </button>
+                <button class="ast-cmd-btn px-5 py-2.5 rounded-xl bg-slate-800 text-white font-mono text-xs hover:bg-cyan-500 hover:text-slate-950 transition flex items-center gap-1.5 border border-white/10 shadow-lg" data-cmd="TURN_RIGHT">
+                  RIGHT 45° <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+              </div>
+              <button class="ast-cmd-btn px-6 py-2.5 rounded-xl bg-slate-800 text-white font-mono text-xs hover:bg-cyan-500 hover:text-slate-950 transition flex items-center gap-1.5 border border-white/10 shadow-lg" data-cmd="REVERSE">
+                <i data-lucide="arrow-down" class="w-4 h-4"></i> REVERSE (-0.4 m/s)
+              </button>
+            </div>
+
+            <!-- Voice Command Presets & Web Speech API -->
+            <div class="pt-4 border-t border-white/10 space-y-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-mono text-slate-300 block">Whisper AI Voice Input</span>
+                <button id="btn-ast-mic" class="px-2.5 py-1 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-500 hover:text-slate-950 text-[10px] font-mono transition flex items-center gap-1">
+                  <span>🎙️</span> Speak Voice Command
+                </button>
+              </div>
+              <div class="grid grid-cols-2 gap-2 text-xs font-mono">
+                <button class="ast-voice-btn p-2 rounded-lg bg-slate-900 border border-white/10 text-slate-300 hover:text-amber-400 hover:border-amber-500/40 transition text-left" data-voice="Guide through the main entrance doorway" data-cmd="NAVIGATE_DOORWAY">
+                  🗣️ "Guide to doorway"
+                </button>
+                <button class="ast-voice-btn p-2 rounded-lg bg-slate-900 border border-white/10 text-slate-300 hover:text-amber-400 hover:border-amber-500/40 transition text-left" data-voice="Navigate to AI/ML Lab 304" data-cmd="NAVIGATE_LAB304">
+                  🗣️ "Navigate to Lab 304"
+                </button>
+                <button class="ast-voice-btn p-2 rounded-lg bg-slate-900 border border-white/10 text-slate-300 hover:text-amber-400 hover:border-amber-500/40 transition text-left" data-voice="Report distance and battery status" data-cmd="REPORT_STATUS">
+                  🗣️ "Report battery"
+                </button>
+                <button class="ast-voice-btn p-2 rounded-lg bg-slate-900 border border-white/10 text-slate-300 hover:text-amber-400 hover:border-amber-500/40 transition text-left" data-voice="Emergency stop immediately" data-cmd="EMERGENCY_STOP">
+                  🗣️ "Halt immediately"
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 2D SLAM Occupancy Grid Map & Live Sensor Telemetry -->
+        <div class="lg:col-span-7 space-y-4">
+          <div class="p-5 rounded-2xl bg-slate-950 border border-white/10 space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-cyan-400 uppercase font-semibold flex items-center gap-1.5">
+                <i data-lucide="map" class="w-4 h-4"></i> 2D SLAM Occupancy Grid (30m × 20m Campus Floor Plan)
+              </span>
+              <span class="text-[10px] font-mono text-slate-400">Cartographer / RTAB-Map</span>
+            </div>
+
+            <!-- Interactive 2D SLAM Map Canvas -->
+            <div class="relative w-full aspect-[2/1] rounded-xl overflow-hidden bg-slate-950 border border-cyan-500/30">
+              <canvas id="ast-slam-canvas" width="600" height="300" class="w-full h-full object-cover"></canvas>
+              
+              <!-- SLAM Legend Overlay -->
+              <div class="absolute bottom-2 left-2 right-2 bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 flex items-center justify-between text-[10px] font-mono text-slate-300">
+                <div class="flex items-center gap-3">
+                  <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-cyan-400"></span> Robot Pose</span>
+                  <span class="flex items-center gap-1"><span class="w-2 h-0.5 bg-red-500"></span> 16-Ray LiDAR</span>
+                  <span class="flex items-center gap-1"><span class="w-2 h-2 bg-slate-700"></span> Walls</span>
+                </div>
+                <span class="text-emerald-400">Coord: (<span id="slam-coord-x">12.5</span>m, <span id="slam-coord-y">8.2</span>m)</span>
+              </div>
+            </div>
+
+            <!-- Live Speech Synthesis Output & Status -->
+            <div class="p-3 rounded-xl bg-slate-900/90 border border-amber-500/30 font-mono text-xs space-y-1">
+              <div class="flex items-center justify-between text-amber-400 font-bold text-[11px]">
+                <span>AUDIO / SPEECH SYNTHESIS ENGINE</span>
+                <span id="ast-response-status">ACKNOWLEDGED</span>
+              </div>
+              <p id="ast-response-text" class="text-slate-200 text-xs italic">
+                "System initialized. Standing by for navigation or voice commands."
+              </p>
+            </div>
+
+            <!-- Live ROS 2 Execution Terminal Log -->
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between text-[11px] font-mono text-slate-400">
+                <span>ROS 2 Command Stream</span>
+                <span>Endpoint: <code>/api/assistive/command</code></span>
+              </div>
+              <div id="ast-terminal-log" class="p-3 rounded-xl bg-black border border-white/10 font-mono text-[11px] text-emerald-400 h-24 overflow-y-auto space-y-1">
+                <div>[SYSTEM] Connected to Python Backend Telemetry Dispatcher</div>
+                <div>[RTAB-MAP] 2D Occupancy Grid synchronized with 16-ray LiDAR</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       IIT JODHPUR CYBERSECURITY DEFENSIVE SCANNER OPERATIONAL MODAL
+       ======================================================================== -->
+  <div id="security-operational-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4">
+    <div class="modal-content glass-panel w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-3xl p-5 sm:p-8 border border-red-500/40 shadow-2xl space-y-6">
+      <!-- Modal Header -->
+      <div class="flex items-start justify-between pb-4 border-b border-white/10">
+        <div>
+          <div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-[10px] font-mono bg-red-500/10 text-red-300 border border-red-500/30 mb-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-400 animate-pulse"></span>
+            IIT JODHPUR INTERNSHIP LAB • CYBERSECURITY DEFENSIVE ARCHITECTURE
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white flex items-center gap-2">
+            <i data-lucide="shield-alert" class="w-6 h-6 text-red-400"></i>
+            Defensive System Architecture &amp; Shannon Entropy Scanner
+          </h3>
+          <p class="text-xs text-slate-300 font-mono mt-1">
+            Forensic analysis engine calculating mathematical Shannon entropy, PE binary headers, and malicious execution heuristics via <code>/api/security/scan</code>.
+          </p>
+        </div>
+        <button id="close-security-modal" class="p-2 rounded-xl bg-slate-800 text-slate-400 hover:text-white transition">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Quick Preset Payloads -->
+      <div class="space-y-2">
+        <span class="text-[10px] font-mono text-slate-400 uppercase tracking-wider block">Load Forensic Benchmark Test Sample</span>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 font-mono text-xs">
+          <button class="sec-sample-btn p-2.5 rounded-xl bg-slate-900 border border-white/10 hover:border-cyan-500/40 text-slate-200 text-left transition" data-type="clean">
+            <div class="text-cyan-400 font-bold">1. Clean System DLL</div>
+            <div class="text-[10px] text-slate-400">Legitimate Win32 binary, low entropy</div>
+          </button>
+          <button class="sec-sample-btn p-2.5 rounded-xl bg-slate-900 border border-white/10 hover:border-red-500/40 text-slate-200 text-left transition" data-type="packed">
+            <div class="text-red-400 font-bold">2. Packed Ransomware</div>
+            <div class="text-[10px] text-slate-400">High entropy H>7.2, VirtualAlloc hook</div>
+          </button>
+          <button class="sec-sample-btn p-2.5 rounded-xl bg-slate-900 border border-white/10 hover:border-amber-500/40 text-slate-200 text-left transition" data-type="dropper">
+            <div class="text-amber-400 font-bold">3. Network Dropper</div>
+            <div class="text-[10px] text-slate-400">WS2_32.dll socket hook, injection vector</div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Binary / Text Inspection Area -->
+      <div class="space-y-2 font-mono text-xs">
+        <label class="text-[11px] text-slate-300 font-semibold block">Binary Payload / Code Segment Inspector</label>
+        <textarea id="sec-input-content" rows="4" class="w-full p-3 rounded-xl bg-slate-950 border border-white/10 text-cyan-300 font-mono text-xs focus:ring-1 focus:ring-red-400 focus:outline-none" placeholder="Enter byte hex stream, PE header, or executable code snippet..."></textarea>
+        <button id="btn-run-security-scan" class="w-full py-2.5 rounded-xl bg-gradient-to-r from-red-600 to-rose-700 text-white font-bold text-xs hover:brightness-110 transition shadow-[0_0_20px_rgba(239,68,68,0.4)] flex items-center justify-center gap-2">
+          <i data-lucide="scan" class="w-4 h-4"></i> Execute Shannon Entropy &amp; Heuristic Scan
+        </button>
+      </div>
+
+      <!-- Forensic Scan Results -->
+      <div id="sec-results-panel" class="p-4 rounded-2xl bg-slate-950 border border-white/10 space-y-4 font-mono text-xs">
+        <div class="flex items-center justify-between pb-3 border-b border-white/10">
+          <span class="text-slate-300 font-bold flex items-center gap-2">
+            <span>🔍</span> FORENSIC TELEMETRY REPORT
+          </span>
+          <span id="sec-threat-badge" class="px-2.5 py-0.5 rounded text-xs font-bold bg-slate-800 text-slate-400">STANDBY</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div class="p-3 rounded-xl bg-slate-900 border border-white/5 space-y-1">
+            <span class="text-[10px] text-slate-400 block">SHANNON ENTROPY (H)</span>
+            <div id="sec-entropy-val" class="text-lg font-bold text-white">0.00 / 8.00</div>
+            <div class="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden">
+              <div id="sec-entropy-bar" class="h-full bg-cyan-400 transition-all duration-500" style="width: 0%"></div>
+            </div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900 border border-white/5 space-y-1">
+            <span class="text-[10px] text-slate-400 block">PACKING &amp; ENCRYPTION</span>
+            <div id="sec-packing-val" class="text-sm font-bold text-slate-300">Unanalyzed</div>
+            <div id="sec-packing-desc" class="text-[10px] text-slate-500">Threshold H &gt; 7.0</div>
+          </div>
+          <div class="p-3 rounded-xl bg-slate-900 border border-white/5 space-y-1">
+            <span class="text-[10px] text-slate-400 block">PE HEADER / IMPORT HOOKS</span>
+            <div id="sec-hooks-val" class="text-sm font-bold text-slate-300">None detected</div>
+            <div id="sec-hooks-desc" class="text-[10px] text-slate-500">API signatures</div>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-slate-900/80 border border-white/5 space-y-1">
+          <span class="text-[10px] text-slate-400 block">DEFENSIVE AUDIT VERDICT</span>
+          <p id="sec-verdict-text" class="text-slate-200 text-xs">
+            Awaiting inspection. Select a benchmark sample above or paste an executable code fragment to evaluate.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       Resume Printable / Download Modal
+       ======================================================================== -->
+  <div id="resume-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-content glass-panel w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-3xl p-6 sm:p-8 border border-white/20 shadow-2xl space-y-6">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10">
+        <div>
+          <span class="text-xs font-mono text-cyan-400">Curriculum Vitae</span>
+          <h3 class="text-2xl font-bold text-white">Krishna Sharma — Resume</h3>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="print-resume-btn" class="px-3 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 text-xs font-mono hover:bg-cyan-500 hover:text-slate-950 transition flex items-center gap-1.5">
+            <i data-lucide="printer" class="w-3.5 h-3.5"></i> Print / Save PDF
+          </button>
+          <button id="close-resume-modal" class="p-2 rounded-lg bg-slate-800 text-slate-400 hover:text-white transition">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Resume Document Preview -->
+      <div class="bg-slate-950 p-6 sm:p-8 rounded-2xl border border-white/10 space-y-6 font-sans text-slate-200 text-xs leading-relaxed">
+        <div class="border-b border-white/10 pb-4">
+          <h2 class="text-xl font-bold text-white tracking-wide">KRISHNA SHARMA</h2>
+          <p class="font-mono text-cyan-400 text-xs mt-0.5">B.Tech CSE (AI/ML) Student | Python Developer</p>
+          <p class="text-slate-400 mt-1">Indore, Madhya Pradesh, India • Krishna.123mrkpro@gmail.com • +91 6266471092 • <a href="https://github.com/Sharmaji2209-bot" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">GitHub</a> • <a href="https://www.linkedin.com/in/krishna-sharma-a08065326?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">LinkedIn</a></p>
+        </div>
+
+        <div class="space-y-1">
+          <h4 class="font-mono text-cyan-400 uppercase text-[11px] font-bold tracking-wider">Education</h4>
+          <div class="flex justify-between font-bold text-white">
+            <span>IES IPS Academy, Indore — B.Tech Computer Science &amp; Engineering (Core)</span>
+            <span class="font-mono text-cyan-400">CGPA: 7.56</span>
+          </div>
+          <p class="text-slate-400">Currently in 3rd Year (5th Semester) • Expected Graduation: 2028</p>
+          <p class="text-slate-400">Secondary Education: Class 10 (75.6%)</p>
+        </div>
+
+        <div class="space-y-1">
+          <h4 class="font-mono text-cyan-400 uppercase text-[11px] font-bold tracking-wider">Experience &amp; Internships</h4>
+          <div class="space-y-2">
+            <div>
+              <div class="flex justify-between font-bold text-white">
+                <span>Academy of Skill Development — AI/ML Using Python Intern</span>
+                <span class="font-mono text-slate-400">12 July 2025 – 14 Sept 2025 (8 Wks)</span>
+              </div>
+              <p class="text-slate-300">Worked on AI agents and practical computer vision automation for attendance logging.</p>
+            </div>
+            <div>
+              <div class="flex justify-between font-bold text-white">
+                <span>IIT Jodhpur — Cybersecurity Intern</span>
+                <span class="font-mono text-slate-400">23 March 2023 – 25 April 2023 (4 Wks)</span>
+              </div>
+              <p class="text-slate-300">Explored defensive software system solutions, threat protection heuristics, and security concepts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-1">
+          <h4 class="font-mono text-cyan-400 uppercase text-[11px] font-bold tracking-wider">Key Projects</h4>
+          <div class="space-y-2">
+            <div>
+              <div class="font-bold text-white">Autonomous Depth Navigation Assistant for the Visually Impaired (Signature Project)</div>
+              <p class="text-slate-300">Designed sensorless monocular distance calibration ($d = \alpha / (\text{disp} + \varepsilon)$), P80 disparity slicing, 3-tier asynchronous threading pipeline (60 FPS streaming + 14 Hz inference), and forensic blackbox collision breach recorder.</p>
+            </div>
+            <div>
+              <div class="font-bold text-white">Smart Employee Attendance System Using AI (Team Leader)</div>
+              <p class="text-slate-300">Multi-face detection pipeline using OpenCV, MTCNN, and pre-trained CNNs with state database architecture concepts.</p>
+            </div>
+            <div>
+              <div class="font-bold text-white">AI-Based Autonomous Assistance System for Disabled People (Team Leader)</div>
+              <p class="text-slate-300">ROS 2, Cartographer SLAM, YOLO object tracking, Whisper AI voice interface, and IoT fall distress alerts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-1">
+          <h4 class="font-mono text-cyan-400 uppercase text-[11px] font-bold tracking-wider">Technical Skills</h4>
+          <p class="text-slate-300">
+            <strong>Languages:</strong> Python, C, C++ • <strong>AI/ML &amp; CV:</strong> PyTorch, YOLOv8-Nano, MiDaS, OpenCV, MTCNN, Scikit-learn, NumPy, Pandas • <strong>Web &amp; Tools:</strong> Flask, HTML5/CSS/JS, Git, GitHub, VS Code, Google Cloud, Google Antigravity.
+          </p>
+        </div>
+
+        <div class="space-y-1">
+          <h4 class="font-mono text-cyan-400 uppercase text-[11px] font-bold tracking-wider">Honors &amp; Programs</h4>
+          <p class="text-slate-300">
+            🥇 1st Place Yuva Utsav Science Exhibition • 🥈 2nd Place Debate on AI for Kids (Global Skill Park, Bhopal) • Google Cloud Program (2025 &amp; 2026) • NSS B &amp; C Certificate.
+          </p>
+        </div>
+      </div>
+
+      <!-- Action Footer with File Placement Guidance -->
+      <div class="p-4 rounded-xl bg-slate-900 border border-white/10 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
+        <div class="text-slate-400">
+          <span class="text-cyan-400 font-bold">Resume Storage Location:</span> <code>assets/resume/Krishna_Sharma_Resume.pdf</code>
+        </div>
+        <a href="assets/resume/Krishna_Sharma_Resume.pdf" download="Krishna_Sharma_Resume.pdf" class="px-4 py-2 rounded-lg bg-cyan-500 text-slate-950 font-bold hover:bg-cyan-400 transition flex items-center gap-1.5">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i> Download PDF
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Application Entry Point -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

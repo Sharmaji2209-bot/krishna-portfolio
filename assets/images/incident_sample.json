@@ -1,0 +1,18 @@
+{
+  "incident_id": "20260922_231746_061",
+  "timestamp": "2026-09-22T23:17:46.061927",
+  "obstacle_name": "person",
+  "confidence": 0.92,
+  "estimated_distance_m": 0.65,
+  "direction_zone": "CENTER",
+  "vertical_zone": "NORMAL",
+  "bounding_box": [
+    250,
+    100,
+    390,
+    420
+  ],
+  "snapshot_file": "snapshot_20260922_231746_061.jpg",
+  "threat_level": "CRITICAL",
+  "alert_message": "CRITICAL BREACH: person at 0.65m in CENTER ZONE"
+}
